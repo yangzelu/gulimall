@@ -1,0 +1,20 @@
+package com.atguigu.gulimall.product.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.atguigu.common.utils.PageUtils;
+import com.atguigu.gulimall.product.entity.SpuInfoEntity;
+
+import java.util.Map;
+
+/**
+ * spu信息
+ *
+ * @author yangzelu
+ * @email 1191177195@qq.com
+ * @date 2021-05-30 15:17:56
+ */
+public interface SpuInfoService extends IService<SpuInfoEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
